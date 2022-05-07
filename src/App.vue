@@ -1,11 +1,16 @@
 <template>
-  <div class="app">houdunren.com</div>
+  <div class='app'>
+    <!--    <InputDemo />-->
+    <FormItemDemo />
+  </div>
 </template>
 
-<script lang="ts"></script>
+<script lang='ts' setup>
+import FormItemDemo from '@/components/form-item/demo.vue'
+</script>
 
-<style lang="scss">
+<style lang='scss'>
 .app {
-  color: $primary-color;
+  padding: 20px;
 }
 </style>
