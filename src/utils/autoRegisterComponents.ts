@@ -1,8 +1,9 @@
 import { App } from 'vue'
-import InputDemo from '../components/input/demo.vue'
-import FormItemDemo from '../components/form-item/demo.vue'
+import HdInput from '@/components/input/index'
+import FormItem from '@/components/form/form-item'
+import Form from '@/components/form/index'
 
-const components = [InputDemo, FormItemDemo]
+const components = [HdInput, FormItem, Form]
 export default function autoRegisterComponents(app: App) {
   components.forEach(component => {
     app.component(component.name, component)

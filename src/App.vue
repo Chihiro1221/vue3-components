@@ -1,12 +1,11 @@
 <template>
   <div class='app'>
-    <!--    <InputDemo />-->
     <FormItemDemo />
   </div>
 </template>
 
 <script lang='ts' setup>
-import FormItemDemo from '@/components/form-item/demo.vue'
+import FormItemDemo from '@/components/form/demo.vue'
 </script>
 
 <style lang='scss'>

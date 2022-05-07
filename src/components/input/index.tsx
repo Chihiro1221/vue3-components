@@ -1,6 +1,6 @@
 import { defineComponent, inject } from 'vue'
 import './index.scss'
-import { FormItemContext, ProviderKeyEnum } from '@/components/form-item/types'
+import { FormItemContext, ProviderKeyEnum } from '@/components/form/types'
 
 export default defineComponent({
   name: 'HdInput',
