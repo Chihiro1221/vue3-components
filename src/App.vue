@@ -1,11 +1,13 @@
 <template>
   <div class='app'>
-    <FormItemDemo />
+    <!--    <FormDemo />-->
+    <TabsDemo />
   </div>
 </template>
 
 <script lang='ts' setup>
-import FormItemDemo from '@/components/form/demo.vue'
+import FormDemo from '@/components/form/demo.vue'
+import TabsDemo from '@/components/tabs/demo.vue'
 </script>
 
 <style lang='scss'>
