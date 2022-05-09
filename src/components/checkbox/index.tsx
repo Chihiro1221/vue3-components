@@ -1,25 +1,25 @@
 import { defineComponent, computed } from 'vue'
 import './index.scss'
-import { CustomFunction } from '@/components/checkbox/types'
+import { CustomFunction } from '@/components/types'
 
 export default defineComponent({
   name: 'Checkbox',
   props: {
     modelValue: {
       type: Boolean,
-      default: false,
+      default: false
     },
     disabled: {
       type: Boolean,
-      default: false,
+      default: false
     },
     halfChecked: {
       // 是否半选
       type: Boolean,
-      default: false,
+      default: false
     },
 
-    onChange: Function as CustomFunction<boolean>,
+    onChange: Function as CustomFunction<boolean>
   },
   emits: ['update:modelValue', 'change'],
   setup(props, { emit, slots }) {
@@ -45,10 +45,10 @@ export default defineComponent({
     return () => {
       return (
         <div class={rootCls.value}>
-          <div class="inner" onClick={handleClick} />
-          <div class="content">{slots.default && slots.default()}</div>
+          <div class='inner' onClick={handleClick} />
+          <div class='content'>{slots.default && slots.default()}</div>
         </div>
       )
     }
-  },
+  }
 })

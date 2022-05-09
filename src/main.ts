@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './styles/index.scss'
-import autoRegisterComponents from '@/utils/autoRegisterComponents'
+import autoComponent from '@/components/index'
 
 const app = createApp(App)
-app.use(autoRegisterComponents)
+app.use(autoComponent)
 app.mount('#app')

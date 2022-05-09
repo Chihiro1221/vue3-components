@@ -1,7 +1,7 @@
 <script setup lang='ts'>
 import { nodeKey, TreeInstance, TreeNodeOptions } from '@/components/tree/types'
 import { h, onMounted, ref, render } from 'vue'
-import { CheckboxTuple } from '@/types'
+import { CheckboxTuple } from '@/components/types'
 
 // 基本
 // function recursion(path = '0', level = 2): TreeNodeOptions[] {
