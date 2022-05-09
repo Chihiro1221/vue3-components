@@ -1,5 +1,5 @@
 import { RequiredTreeNodeOptions, TreeNodeOptions } from './types'
-import _ from 'lodash'
+import { cloneDeep } from 'lodash-es'
 
 // 复选框向下更新
 function updateDown(state: boolean, node: RequiredTreeNodeOptions) {
@@ -60,7 +60,7 @@ function flattenTree(
 
 // 渲染子集
 const expand = (node: RequiredTreeNodeOptions, tree: RequiredTreeNodeOptions[], children?: TreeNodeOptions[]) => {
-  const flatChildrenList = _.cloneDeep(children ?? node.children).map(item => {
+  const flatChildrenList = cloneDeep(children ?? node.children).map(item => {
     return {
       ...item,
       level: item.level || node.level + 1,
