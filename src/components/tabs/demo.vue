@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import Tabs from '@/components/tabs/index'
+import Tabs from '@/components/tabs/tabs'
 import { ref } from 'vue'
 
 const currentTab = ref('1')

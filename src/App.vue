@@ -1,8 +1,8 @@
 <template>
   <div class='app'>
-    <!--    <FormDemo />-->
+    <FormDemo />
     <!--    <TabsDemo />-->
-    <TreeDemo></TreeDemo>
+    <!--    <TreeDemo></TreeDemo>-->
   </div>
 </template>
 

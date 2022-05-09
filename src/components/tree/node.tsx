@@ -1,7 +1,7 @@
 import { computed, defineComponent, Slot } from 'vue'
 import { PropType } from '@vue/runtime-core'
 import { renderFunc, RequiredTreeNodeOptions, TreeNodeInstance } from '@/components/tree/types'
-import Checkbox from '@/components/checkbox'
+import Checkbox from '@/components/checkbox/checkbox'
 import { CustomFunction } from '@/components/types'
 
 export default defineComponent({

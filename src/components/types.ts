@@ -1,7 +1,8 @@
 import { RequiredTreeNodeOptions } from '@/components/tree/types'
 import { PropType } from '@vue/runtime-core'
+import { App } from 'vue'
 
 type CheckboxTuple = [boolean, RequiredTreeNodeOptions];
 type CustomFunction<T> = PropType<(node: T, e?: Event) => void>
-
-export { CheckboxTuple, CustomFunction }
+type SFCWithInstall<T> = T & { install: (app: App) => void }
+export { CheckboxTuple, CustomFunction, SFCWithInstall }

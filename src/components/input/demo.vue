@@ -6,7 +6,7 @@ export default {
 
 <script setup lang='ts'>
 import { ref } from 'vue'
-import HdInput from '@/components/input/index'
+import HdInput from '@/components/input/input'
 
 const content = ref('')
 </script>
