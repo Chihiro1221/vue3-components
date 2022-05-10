@@ -98,6 +98,33 @@ app.use(Tree)
 app.mount('#app')
 ```
 
+打包：
+
+```bash
+# 普通打包
+npm run build:demo
+
+# 只打包组件（vue-cli方式，umd）
+npm run build:lib:cli
+
+# rollup打包（umd）
+npm run build:lib:umd
+
+# rollup打包（esm）
+npm run build:lib:esm
+
+# 打包类型声名文件
+npm run build:types
+
+# 综合打包（umd、esm、types）
+npm run build
+
+# 输出文件
+lib/esm
+lib/umd
+lib/types
+```
+
 ## 主要特性
 
 - provide/inject（依赖注入）

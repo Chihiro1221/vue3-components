@@ -7,10 +7,11 @@ import TreeNode from '@/components/tree-node/index'
 import Checkbox from '@/components/checkbox/index'
 import Tree from '@/components/tree/index'
 import Form from '@/components/form/index'
+import Table from '@/components/table'
 
-const components = [HdInput, FormItem, Form, Tabs, TabPane, Tree, TreeNode, Checkbox]
+const components = [HdInput, FormItem, Form, Tabs, TabPane, Tree, TreeNode, Checkbox, Table]
 export {
-  HdInput, FormItem, Form, Tabs, TabPane, Tree, TreeNode, Checkbox
+  HdInput, FormItem, Form, Tabs, TabPane, Tree, TreeNode, Checkbox, Table
 }
 export default function autoRegisterComponents(app: App) {
   components.forEach(component => {

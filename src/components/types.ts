@@ -5,4 +5,6 @@ import { App } from 'vue'
 type CheckboxTuple = [boolean, RequiredTreeNodeOptions];
 type CustomFunction<T> = PropType<(node: T, e?: Event) => void>
 type SFCWithInstall<T> = T & { install: (app: App) => void }
-export { CheckboxTuple, CustomFunction, SFCWithInstall }
+type ClickType = 'single' | 'ctrl' | 'shift';
+
+export { CheckboxTuple, CustomFunction, SFCWithInstall, ClickType }

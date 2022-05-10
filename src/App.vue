@@ -1,8 +1,9 @@
 <template>
   <div class='app'>
-    <FormDemo />
+    <!--    <FormDemo />-->
     <!--    <TabsDemo />-->
-    <!--    <TreeDemo></TreeDemo>-->
+    <!--    <TreeDemo />-->
+    <TableDemo />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import FormDemo from '@/components/form/demo.vue'
 import TabsDemo from '@/components/tabs/demo.vue'
 import TreeDemo from '@/components/tree/demo.vue'
+import TableDemo from '@/components/table/demo.vue'
 </script>
 
 <style lang='scss'>
